@@ -1,11 +1,18 @@
 import React from 'react'
+import Header from './components/Header'
+import Hero from './components/Hero'
+import Features from './components/Features'
+import About from './components/About'
+import PriorityAccess from './components/PriorityAccess'
 
 export default function App() {
   return (
-    <div style={{ fontFamily: 'system-ui, sans-serif', padding: '2rem' }}>
-      <h1>Emanate — szkic strony (React + TypeScript)</h1>
-      <p>Projekt skonfigurowany tak, by działać z Bun (użyj <code>bun install</code>).</p>
-      <p>Uruchom lokalnie: <code>bun run dev</code> lub <code>npm run dev</code>.</p>
+    <div className="min-h-screen">
+      <Header />
+      <Hero />
+      <Features />
+      <About />
+      <PriorityAccess />
     </div>
   )
 }
